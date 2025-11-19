@@ -5,6 +5,8 @@
 
 import simple_package.operations as sp
 import simple_package.statistics as st
+import simple_package.graphics as gr
+import numpy as np
 
 if __name__ == '__main__':
     ## Define two numbers
@@ -19,8 +21,8 @@ if __name__ == '__main__':
 
     print(sp.sin(a))
 
-    data = [1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 100.0]
+    data = np.random.normal(0, 5, 200)
 
     data = st.validate_and_convert_data(data)
     st.calculate_and_display_stats(data)
-
+    gr.plot_data_histogram(data, "A Great Histogram")
