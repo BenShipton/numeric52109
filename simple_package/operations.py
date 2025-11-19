@@ -45,7 +45,7 @@ def divide(a, b):
 
 def sin(a):
     """Return the sin of a number in radians."""
-    return np.sin()
+    return np.sin(a)
 
 def log(a):
     """Return the log base e of a number."""
