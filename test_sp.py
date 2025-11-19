@@ -19,10 +19,3 @@ if __name__ == '__main__':
     ## Now do the same for the function in sp
     print(f"The product of {a} and {b} is {sp.multiply(a,b)}")
 
-    print(sp.sin(a))
-
-    data = np.random.normal(0, 5, 200)
-
-    data = st.validate_and_convert_data(data)
-    st.calculate_and_display_stats(data)
-    gr.plot_data_histogram(data, "A Great Histogram")
